@@ -41,36 +41,80 @@
 
 // console.log(printPost(post))
 
-class Car {
-  public color: string;
-  public year: number;
+// class Car {
+//   public color: string;
+//   public year: number;
 
-  constructor(color: string, year: number) {
-    this.color = color;
-    this.year = year;
-  }
+//   constructor(color: string, year: number) {
+//     this.color = color;
+//     this.year = year;
+//   }
 
-  drive() {
-    this.putInGear();
-    this.pressPetal();
-    this.turnWheel();
-  }
+//   drive() {
+//     this.putInGear();
+//     this.pressPetal();
+//     this.turnWheel();
+//   }
 
-  private putInGear() {
+//   private putInGear() {
 
-  }
+//   }
 
-  private pressPetal() {
+//   private pressPetal() {
 
-  }
+//   }
 
-  private turnWheel() {
+//   private turnWheel() {
 
 
-  }
-}
+//   }
+// }
 
-const myCar = new Car('red', 2000);
-myCar.drive()
+// const myCar = new Car('red', 2000);
+// myCar.drive()
 
-console.log(myCar.color, myCar.year)
+// console.log(myCar.color, myCar.year)
+
+// const Component = (target: any) => {
+//   console.log(target)
+// }
+
+// @Component
+// class Car {
+//   @Component year: string;
+
+//   @Component
+//   drive(@Component speed: number) {
+
+//   }
+
+//   @Component
+//   get year {
+
+//   }
+// }
+
+// import { Car } from './Car'
+
+// const myCar = new Car();
+
+// interface Drivable {
+//   speed: number;
+//   drive(): string;
+// }
+
+// class Car implements Drivable {
+//   speed = 10;
+
+//   drive() {
+//     return `i am driving at ${speed} mph`
+//   }
+// }
+
+// const myCar = new Car();
+
+// const startDriving = (vehicle: Drivable) => {
+//   vehicle.drive();
+// }
+
+// startDriving(myCar);
