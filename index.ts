@@ -119,28 +119,39 @@
 
 // startDriving(myCar);
 
-class NumberHolder {
-  value: number;
+// class NumberHolder {
+//   value: number;
+// }
+
+// class StringHolder {
+//   value: string;
+// }
+
+// class BooleanHolder {
+//   value: boolean;
+// }
+
+// class ValueHolder<TypeForValueProperty> {
+//   value: TypeForValueProperty;
+// }
+
+// const numberHolder = new ValueHolder<number>();
+// numberHolder.value
+
+
+// const stringHolder = new StringHolder();
+// stringHolder.value = "hello";
+
+// const booleanHolder = new BooleanHolder();
+// booleanHolder.value = true;
+
+// class ValueHolder<T> {
+//   value: T;
+// }
+
+const valueWrapper = <T>(value: T): T[] => {
+  return [value]
 }
 
-class StringHolder {
-  value: string;
-}
+console.log(valueWrapper('abc'));
 
-class BooleanHolder {
-  value: boolean;
-}
-
-class ValueHolder<TypeForValueProperty> {
-  value: TypeForValueProperty;
-}
-
-const numberHolder = new ValueHolder<number>();
-numberHolder.value
-
-
-const stringHolder = new StringHolder();
-stringHolder.value = "hello";
-
-const booleanHolder = new BooleanHolder();
-booleanHolder.value = true;
